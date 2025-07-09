@@ -65,7 +65,7 @@ public class Mapa {
 
     public void runTreeMapObj() {
         System.out.println("-------Tree Map Obj--------");
-        Map<Empleado, Integer> empleados = new TreeMap();
+        Map<Empleado, Integer> empleados = new TreeMap<>();
         empleados.put(new Empleado(1, "Juan", "Dev"), 1200);
         empleados.put(new Empleado(2, "Juan", "Dev"), 1500);
         empleados.put(new Empleado(3, "Pedro", "Dev"), 2000);
