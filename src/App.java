@@ -4,13 +4,15 @@ import controllers.EmpleadoDAO;
 import controllers.EmpleadoDAOHashMap;
 import controllers.EmpleadoTreeMap;
 import controllers.Mapa;
-
+import controllers.Ejercicios;
 import models.Empleado;
 
 public class App {
+    static Ejercicios eJ;
     public static void main(String[] args) throws Exception {
         System.out.println("----Practica Mapas----");
         System.out.println("Nombre: Mateo Namicela"); /// Cambiar por su nombre
+
         // Ejecuta el ejemplo de uso de HashMap con ejemplos sencillos
         // runMapExamlpe();
 
@@ -20,7 +22,8 @@ public class App {
         // // Ejecuta los ejercicios de sumatoria y anagramas
         // runEjerccios();
 
-        runEmpleadoExample();
+        // runEmpleadoExample();
+        runEjerccios();
 
     }
 
@@ -76,7 +79,9 @@ public class App {
     }
 
     private static void runEjerccios() {
-        throw new UnsupportedOperationException("Not implemented yet");
-
+        eJ = new Ejercicios();
+        System.out.println(eJ.areAnagrams("listen", "silent"));    // true
+        System.out.println(eJ.areAnagrams("hello", "bello"));      // false
+        System.out.println(eJ.areAnagrams("triangle", "integral")); 
     }
 }
